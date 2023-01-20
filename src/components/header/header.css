@@ -1,0 +1,122 @@
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(../assets/images/background1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 140px;
+}
+.logo span{
+    color: #ec6324;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ec6324;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 20px;
+}
+
+.header-text p{
+    color: #ec6324;
+}
+
+.header-text h2{
+    color: rgb(243, 237, 237);
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+#fade{
+    font-size: 30px;
+    color: rgb(180, 177, 177);
+    margin-top: 2px;
+}
+
+#fade:hover{
+    color: #fff;
+    transition: var(--transition);
+}
+
+nav .fas{
+    display: none;
+}
+
+/* ===========SMALL SCREEN ============ */
+
+@media screen and (max-width:600px) {
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h2 {
+        font-size: 45px;
+    }
+    #fade{
+        font-size: 22px;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ec6324;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        padding: 50px;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
