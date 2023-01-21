@@ -78,9 +78,6 @@ nav ul li a:hover::after{
     transition: var(--transition);
 }
 
-nav .fas{
-    display: none;
-}
 
 /* ===========SMALL SCREEN ============ */
 
@@ -95,28 +92,18 @@ nav .fas{
     #fade{
         font-size: 22px;
     }
-    nav .fas{
-        display: block;
-        font-size: 25px;
+    .bigScreenNav {
+        display: none;
     }
-    nav ul{
-        background: #ec6324;
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 200px;
-        height: 100vh;
-        padding: 50px;
-        z-index: 2;
+}
+
+
+@media screen and (max-width:600px){
+    .smallScreen{
+        display: inline-flex;
     }
-    nav ul li{
-        display: block;
-        margin: 25px;
-    }
-    nav ul .fas{
-        position: absolute;
-        top: 25px;
-        left: 25px;
-        cursor: pointer;
-    }
+}
+
+navigation{
+    display: none;
 }

@@ -1,30 +1,23 @@
 import './header.css'
-import {FaBars} from 'react-icons/fa'
-import {FaTimes} from 'react-icons/fa'
-import CTA from './CTA'
+import Nav from '../nav/Nav'
 
 const Header = () => {
-  var sidemenu = document.getElementById("sidemenu");
-  function openmenu(){
-    sidemenu.style.right= '0';
-  }
-  function closemenu(){
-    sidemenu.style.right = '-200px'
-  }
+  
   return (
     <div id='header'>
+      <Nav className='smallScreen'/>
       <div className="container">
-        <nav>
+        <nav className='bigScreenNav'>
             <h2 className='logo'><span>P</span>rabhat.</h2>
             <ul id='sidemenu'>
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#" onClick={CTA} >Services</a></li>
-                <li><a href='#' onClick={CTA}>Projects</a></li>
+                <li><a href="#" >Services</a></li>
+                <li><a href='#' >Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <FaTimes className='fas' onClick={()=>closemenu()} />
+                
             </ul>
-            <FaBars className='fas' onClick={()=>openmenu()}/>
+            
         </nav>
         <div className="header-text">
             <p>Hi, my name is</p>
