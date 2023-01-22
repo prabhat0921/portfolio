@@ -25,8 +25,8 @@ const Aboutt = () => {
             </div>
             <div className="about-col-2">
                 <h1 className='sub-title'>About Me</h1>
-                <p>Hello! My name is Prabhat Kushwaha and I enjoy creating things that live on the internet. My interest in web development started back in 2021 when I joined my college to Pursue Computer Science, I have tried HTML and CSS before when i was in 8th grade but because of some reason i didnt continue.
-                   <div><br /></div>Fast Forward to today i have accomplished a lot of knowledge in Frontend Development --- as per the latest required technologies, HTML5, CSS, JavaScript, ReactJS.
+                <p>Hello! My name is Prabhat Kushwaha and I enjoy creating things that live on the internet. My interest in web development started back in 2021 when I joined my college to Pursue Computer Science, I have tried HTML and CSS before when i was in 8th grade but i discontinued due to miscellaneous reasons.
+                   <div><br /></div>Fast Forward to today I have accomplished a lot of knowledge in Frontend Development --- as per the latest required technologies, HTML5, CSS, JavaScript, ReactJS.
                     Apart from these in my college I have learned C and OOPs in C++ and DSA with C++.
                     Yet there is a lot more to LEARN.
                 </p>
@@ -44,7 +44,7 @@ const Aboutt = () => {
                     </div>
                     <div className="tab-contents" id='education'>
                         <ul>
-                            <li><span>2019</span><br />Intermidiate - CBSE</li>
+                            <li><span>2021</span><br />Intermidiate - CBSE</li>
                             <li><span>2021-2024</span><br />BCA - Bachelor in Computer Application</li>
 
                         </ul>
