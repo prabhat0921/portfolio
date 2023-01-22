@@ -12,8 +12,8 @@ const Header = () => {
             <ul id='sidemenu'>
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#" >Services</a></li>
-                <li><a href='#' >Projects</a></li>
+                <li><a href="#" onClick={() => alert('Services will be Added soon')}>Services</a></li>
+                <li><a href='#' onClick={() => alert('Projects will be updated soon')}>Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
                 
             </ul>

@@ -15,11 +15,8 @@ const Contact = () => {
         e.preventDefault();
     
         emailjs.sendForm('service_9rk3pzt', 'template_bv2i56r', form.current, 'ZGo1xvEJXcNmtn9Er')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
+        
+        e.target.reset();
       };
 
   return (
@@ -42,7 +39,7 @@ const Contact = () => {
             <form ref={form} onSubmit={sendEmail}>
                 <input type="text" name='Name' placeholder='Your Name' required />
                 <input type="email" name='email' placeholder='Enter Your Email' required />
-                <textarea name="Message" rows="6"></textarea>
+                <textarea name="Message" rows="6" placeholder="Your Message for Me"></textarea>
                 <button type='submit' className='btn btn2'>Send</button>
             </form>
         </div>
