@@ -25,7 +25,7 @@ const Contact = () => {
         <div className="contact-left">
             <h1 className='sub-title'>Contact Me</h1>
 
-            <p><BiSend /> prabhatkushwah21@gmail.com</p>
+            <p><BiSend /> prabhatkushwaha.dev@gmail.com</p>
             <div className="social-icons">
                 <a href="https://www.instagram.com/spaghetti.disc/"><AiFillInstagram /></a>
                 <a href="https://github.com/prabhat0921/"><FaGithub /></a>
