@@ -4,7 +4,6 @@ import {AiFillInstagram} from 'react-icons/ai'
 import {FaGithub} from 'react-icons/fa'
 import {AiFillLinkedin} from 'react-icons/ai'
 import {BiSend} from 'react-icons/bi'
-import {BsTelephone} from 'react-icons/bs'
 import Resume from '../assets/Resume.pdf'
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com'
@@ -27,7 +26,6 @@ const Contact = () => {
             <h1 className='sub-title'>Contact Me</h1>
 
             <p><BiSend /> prabhatkushwah21@gmail.com</p>
-            <p><BsTelephone /> +917007428216</p>
             <div className="social-icons">
                 <a href="https://www.instagram.com/spaghetti.disc/"><AiFillInstagram /></a>
                 <a href="https://github.com/prabhat0921/"><FaGithub /></a>
